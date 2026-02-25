@@ -26,17 +26,10 @@
 <build>
     <plugins>
 
+        <!-- Spring Boot Plugin -->
         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.2</version>
-            <configuration>
-                <archive>
-                    <manifest>
-                        <mainClass>com.devops.JavaAppApplication</mainClass>
-                    </manifest>
-                </archive>
-            </configuration>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
         </plugin>
 
     </plugins>
