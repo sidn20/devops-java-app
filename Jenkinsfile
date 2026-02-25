@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "sidn20/java-app:6.0"
+        DOCKER_IMAGE = "sidn20/java-app:${BUILD_NUMBER}"
 "
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
@@ -29,7 +29,7 @@ pipeline {
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
-                    sh '''
+                    sh ''
                     echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
                     docker push $DOCKER_IMAGE
                     '''
