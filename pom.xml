@@ -23,10 +23,9 @@
    </dependency>
  </dependencies>
 
- <build>
+<build>
     <plugins>
 
-        <!-- Make executable jar -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
@@ -34,7 +33,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.devops.App</mainClass>
+                        <mainClass>com.devops.JavaAppApplication</mainClass>
                     </manifest>
                 </archive>
             </configuration>
