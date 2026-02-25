@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "sidn20/java-app:3.0"
+        DOCKER_IMAGE = "sidn20/java-app:4.0"
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 sh '''
                 export KUBECONFIG=$KUBECONFIG
-                sed -i "s|image:.*|image: sidn20/java-app:3.0|" deployment.yaml
+                sed -i "s|image:.*|image: sidn20/java-app:4.0|" deployment.yaml
                 kubectl apply -f deployment.yaml
                 '''
             }
