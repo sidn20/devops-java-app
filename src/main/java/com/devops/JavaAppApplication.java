@@ -17,9 +17,4 @@ public class JavaAppApplication {
     public String home() {
         return "🚀 DevOps CI/CD Kubernetes Deployment Successful!";
     }
-
-    @GetMapping("/health")
-    public String health() {
-        return "Application is running!";
-    }
 }
