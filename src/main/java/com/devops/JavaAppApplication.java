@@ -2,7 +2,8 @@ package com.devops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
@@ -15,5 +16,10 @@ public class JavaAppApplication {
     @GetMapping("/")
     public String home() {
         return "🚀 DevOps CI/CD Kubernetes Deployment Successful!";
+    }
+
+    @GetMapping("/health")
+    public String health() {
+        return "Application is running!";
     }
 }
