@@ -100,7 +100,9 @@ cd devops-java-app
 ### 🔹 2. Build Application
 
 ```
+cd app
 mvn clean package
+cd ..
 ```
 
 ---
