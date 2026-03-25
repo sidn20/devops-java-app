@@ -232,7 +232,7 @@ DevOps & Cloud Enthusiast
 
 ---
 
-## ⭐ One-Line Summary (For Interviews)
+## ⭐ One-Line Summary
 
 > Built a complete DevOps pipeline using Jenkins, Docker, and Kubernetes to deploy a Spring Boot application with real-time monitoring using Prometheus and Grafana.
 
