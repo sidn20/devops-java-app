@@ -110,7 +110,7 @@ cd ..
 ### 🔹 3. Build & Push Docker Image
 
 ```
-docker build -t <your-dockerhub-username>/java-app:latest .
+docker build -t <your-dockerhub-username>/java-app:latest app/
 docker push <your-dockerhub-username>/java-app:latest
 ```
 
@@ -119,6 +119,7 @@ docker push <your-dockerhub-username>/java-app:latest
 ### 🔹 4. Deploy to Kubernetes
 
 ```
+minikube start
 kubectl apply -f kubernetes/
 ```
 
@@ -139,6 +140,7 @@ kubectl get svc java-app-service
 Open:
 
 ```
+minikube ip
 http://<minikube-ip>:<nodeport>
 ```
 
@@ -163,6 +165,7 @@ http://localhost:9091
 ### 🔹 Grafana
 
 ```
+kubectl get secret monitoring-grafana -o jsonpath="{.data.admin-password}" | base64 --decode
 kubectl port-forward svc/monitoring-grafana 3000:80
 ```
 
