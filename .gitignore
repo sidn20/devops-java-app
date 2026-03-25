@@ -1,2 +1,7 @@
 *.deb
 minikube-linux-amd64
+target/
+*.jar
+*.log
+*.deb
+minikube*
