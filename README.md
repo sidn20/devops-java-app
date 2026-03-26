@@ -220,30 +220,7 @@ process_cpu_usage
 
 ---
 
-## 🔮 Future Improvements
-
-* 🔹 Add **Horizontal Pod Autoscaler (HPA)**
-* 🔹 Implement **Helm Charts**
-* 🔹 Integrate **ArgoCD (GitOps)**
-* 🔹 Add **NGINX Ingress Controller**
-* 🔹 Set up **Alerting (Slack/Email)**
-
----
-
-## 👨‍💻 Author
-
-**Sidharth Nambiar**
-DevOps & Cloud Enthusiast
-
----
-
 ## ⭐ One-Line Summary
 
 > Built a complete DevOps pipeline using Jenkins, Docker, and Kubernetes to deploy a Spring Boot application with real-time monitoring using Prometheus and Grafana.
-
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub and share!
 
